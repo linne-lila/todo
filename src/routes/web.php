@@ -19,3 +19,9 @@ Route::get('/', function () {
 });
 
 Route::get('/', [Todocontroller::class, 'index']);
+
+Route::post('/todos', [Todocontroller::class, 'store']);
+
+Route::patch('/todos/update', [Todocontroller::class, 'update']);
+
+Route::delete('/todos/delete', [TodoController::class, 'destroy']);
