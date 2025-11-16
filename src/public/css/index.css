@@ -14,14 +14,21 @@
 
 .todo__content{
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 30px 15px;
     max-width: 100%;
     height: auto;
 }
 
-.form{
+.section__title {
     margin: 0 auto;
     width: 70%;
+}
+
+.form,
+.search-form{
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
 
     display: flex;
     text-align: center;
@@ -30,23 +37,54 @@
 
 .form__item{
     padding: 10px;
-    width: 100%;
+    width: 70%;
     height: 50px;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+}
+
+.search-form__item,
+.search-form__item-input{
+    padding: 10px;
+    width: 70%;
+    height: 50px;
+    margin-right: 10px;
     
     border: 1px solid rgb(208, 207, 207);
     border-radius: 5px;
+
+    display: flex;
+}
+
+.create-form__item-select,
+.search-form__item-select {
+    padding: 10px;
+    width: 30%;
+    height: 40px;
+
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
 }
 
 .form__item-text{
-    border: none;
+    width: 70%;
+
     outline: none;
 }
 
-.form__button{
+.form__button,
+.search-form__button{
     width: 20%;
 }
 
-.form__button-send{
+.form__button-send,
+.search-form__button-submit{
     background: black;
     color: white;
 
@@ -63,6 +101,10 @@
     width: 70%;
 
     text-align: left;
+}
+
+.todo-table__header-span {
+    margin-right: 40%;
 }
 
 .table__inner{
@@ -82,7 +124,7 @@
 
 .table__item{
     padding: 10px;
-    width: 80%;
+    width: 40%;
 }
 
 .update{
@@ -99,6 +141,11 @@
 
     border: none;
     outline:none;
+}
+
+.update-form__item-p {
+    text-align: left;
+    font-size: 13px;
 }
 
 .update__button{
